@@ -1,0 +1,13 @@
+test -e filename
+[ -e filename ]
+
+test -f filename
+[ -f filename ]
+#!/bin/bash
+file="/etc/h"
+if [ -f "$file" ]
+then
+    echo "$file found."
+else
+    echo "$file not found."
+fi
